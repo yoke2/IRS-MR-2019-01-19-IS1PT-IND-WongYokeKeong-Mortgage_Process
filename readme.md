@@ -1,7 +1,8 @@
 ﻿# Machine Reasoning Course Report - Individual
 
 ## SECTION 1 : PROJECT TITLE
-## Mortgage Business Process Enhancement
+
+### Mortgage Business Process Enhancement
 
 ---
 ## SECTION 2 : EXECUTIVE SUMMARY
@@ -17,7 +18,7 @@ The aforementioned rule shall be enhanced in the Guided Decision Table "Mortgage
 
 | Official Full Name  | Student ID (MTech Applicable)  |
 | :------------ |:---------------:|
-| Wong Yoke Keong | A1234567A |
+| Wong Yoke Keong | A0195365U |
 
 ---
 
@@ -25,35 +26,36 @@ The aforementioned rule shall be enhanced in the Guided Decision Table "Mortgage
 
 ### [ 1 ] To run the system using iss-vm
 
-> download pre-built virtual machine from http://bit.ly/iss-vm
+* Download pre-built virtual machine from http://bit.ly/iss-vm
 
-> start iss-vm
+* start iss-vm
 
-> Launch KIE 7.12 via the "Tool KIE shortcut"
+* Launch KIE 7.12 via the shortcut "Tool KIE 7.12"
 
-> After startup is complete, launch Google Chrome and click on the KIE shortcut
+* After startup is complete, launch Google Chrome and click on the "KIE WB" shortcut
 
-> Login as wbadmin
+* Login using role "wbadmin"
 
-> Create New Space
+* Create New Workspace
 
-> Import Project from Github
+* Import Project from [Github](https://github.com/yoke2/IRS-MR-2019-01-19-IS1PT-IND-WongYokeKeong-Mortgage_Process.git) or using the provided zip file "Mortgage_Process.zip"
 
-> Deploy Project
+* Choose "Mortgage_Process" tile to import and click on OK
 
-> Initiate Process Instance as wbadmin
+* Deploy Project with Deployment Unit ID "mortgage-process_1.0.0-Enhanced"
 
-> Approve process using iss-mk
+* Mortgage Process Instance can be launched with role "wbadmin"
+
+* Final Approval process can be completed by accessing Task Inbox using role "iss-mk"
 
 ### [ 2 ] To run the system in other/local machine:
 
-> Download jBPM Server 7.12.0 from https://download.jboss.org/jbpm/release/7.12.0.Final/jbpm-server-7.12.0.Final-dist.zip
+* Download jBPM Server 7.12.0 from https://download.jboss.org/jbpm/release/7.12.0.Final/jbpm-server-7.12.0.Final-dist.zip
 
-> 
-    Download and unzip it.
-    On Linux/Mac, run jbpm-server-7.12.0.Final-dist/bin/standalone.sh
-    On Windows, run jbpm-server-7.12.0.Final-dist/bin/standalone.bat
-    Open browser and go to http://localhost:8080/jbpm-console/kie-wb.jsp
+* Download and unzip it.
+    * On Linux/Mac, run jbpm-server-7.12.0.Final-dist/bin/standalone.sh
+    * On Windows, run jbpm-server-7.12.0.Final-dist/bin/standalone.bat
+    * Open browser and go to http://localhost:8080/jbpm-console/kie-wb.jsp
 
 
 ---
