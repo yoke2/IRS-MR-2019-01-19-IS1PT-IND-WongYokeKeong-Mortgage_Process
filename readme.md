@@ -38,7 +38,7 @@ The aforementioned rule shall be enhanced in the Guided Decision Table "Mortgage
 
 * Create New Workspace
 
-* Import Project from [Github](https://github.com/yoke2/IRS-MR-2019-01-19-IS1PT-IND-WongYokeKeong-Mortgage_Process.git) or using the provided zip file "Mortgage_Process.zip"
+* Import Project from [Github](https://github.com/yoke2/IRS-MR-2019-01-19-IS1PT-IND-WongYokeKeong-Mortgage_Process.git) or using the provided zip file "IRS-MR-2019-01-19-IS1PT-IND-WongYokeKeong-Mortgage_Process.zip"
 
 * Choose "Mortgage_Process" tile to import and click on OK
 
