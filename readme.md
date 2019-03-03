@@ -26,37 +26,40 @@ The aforementioned rule shall be enhanced in the Guided Decision Table "Mortgage
 
 ### [ 1 ] To run the system using iss-vm
 
-* Download pre-built virtual machine from http://bit.ly/iss-vm
+1. Download pre-built virtual machine from http://bit.ly/iss-vm
 
-* start iss-vm
+2. start iss-vm
 
-* Launch KIE 7.12 via the shortcut "Tool KIE 7.12"
+3. Launch KIE 7.12 via the shortcut "Tool KIE 7.12"
 
-* After startup is complete, launch Google Chrome and click on the "KIE WB" shortcut
+4. After startup is complete, launch Google Chrome and click on the "KIE WB" shortcut
 
-* Login using role "wbadmin"
+5. Login using role "wbadmin"
 
-* Create New Workspace
+6. Create New Workspace
 
-* Import Project from [Github](https://github.com/yoke2/IRS-MR-2019-01-19-IS1PT-IND-WongYokeKeong-Mortgage_Process.git) or using the provided zip file "IRS-MR-2019-01-19-IS1PT-IND-WongYokeKeong-Mortgage_Process.zip"
+7. Import Project from [Github](https://github.com/yoke2/IRS-MR-2019-01-19-IS1PT-IND-WongYokeKeong-Mortgage_Process.git) or using the provided zip file "IRS-MR-2019-01-19-IS1PT-IND-WongYokeKeong-Mortgage_Process.zip"
 
-* Choose "Mortgage_Process" tile to import and click on OK
+8. Choose "Mortgage_Process" tile to import and click on OK
 
-* Deploy Project with Deployment Unit ID "mortgage-process_1.0.0-Enhanced"
+9. Deploy Project with Deployment Unit ID "mortgage-process_1.0.0-Enhanced"
 
-* Mortgage Process Instance can be launched with role "wbadmin"
+10. Mortgage Process Instance can be launched with role "wbadmin"
 
-* Final Approval process can be completed by accessing Task Inbox using role "iss-mk"
+11. Final Approval process can be completed by accessing Task Inbox using role "iss-mk"
 
 ### [ 2 ] To run the system in other/local machine:
 
-* Download jBPM Server 7.12.0 from https://download.jboss.org/jbpm/release/7.12.0.Final/jbpm-server-7.12.0.Final-dist.zip
+1. Download jBPM Server 7.12.0 from https://download.jboss.org/jbpm/release/7.12.0.Final/jbpm-server-7.12.0.Final-dist.zip
 
-* Download and unzip it.
+2. Download and unzip it.
     * On Linux/Mac, run jbpm-server-7.12.0.Final-dist/bin/standalone.sh
     * On Windows, run jbpm-server-7.12.0.Final-dist/bin/standalone.bat
     * Open browser and go to http://localhost:8080/jbpm-console/kie-wb.jsp
 
+3. Follow Step 5 in [1] onwards with
+    * "wbadmin" configured with group "kie-server" and roles "process-admin", "admin", "analyst", "user"
+    * "iss-mk" configured with groups "kie-server" and "iss-group-manager" and roles "manager" and "user"
 
 ---
 ## SECTION 5 : Appendix
