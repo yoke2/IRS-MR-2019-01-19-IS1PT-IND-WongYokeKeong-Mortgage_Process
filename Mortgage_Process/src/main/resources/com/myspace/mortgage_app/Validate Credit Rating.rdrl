@@ -1,0 +1,16 @@
+package com.myspace.mortgage_app;
+
+import java.lang.Number;
+
+rule "Validate Credit Rating"
+	dialect "mvel"
+	ruleflow-group "validation"
+	when
+		app : Application( applicant.creditrating <= 999 || applicant.creditrating >= 2001 )
+	then
+		ValidationErrorDO fact1 = new ValidationErrorDO();
+		fact1.setError( "Credit Rating must be between 1000 and 2000" );
+		insert( fact1 );
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+		app.setErrors( fact1 );
+end
